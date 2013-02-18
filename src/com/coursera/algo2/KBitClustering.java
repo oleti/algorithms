@@ -78,7 +78,7 @@ public class KBitClustering {
 						clusters.put(sortedNodes[j] ^ currentHammingDifference, leftCluster);
 					} else if(leftCluster == rightCluster) {
 						// Same clusters already.. Ignore this case
-						// System.out.println("Same Clusters ---- ignoring ... first node" + leftCluster.first() + " and " + rightCluster.first() );
+						
 						continue;
 					} else{
 						leftCluster.addAll(rightCluster);

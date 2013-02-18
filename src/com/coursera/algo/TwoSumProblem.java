@@ -46,7 +46,7 @@ public class TwoSumProblem {
 				int thisNumber = nums.next();
 				int targetNumber = targetSum - thisNumber;
 				if(hashSet.contains(targetNumber)){
-					//System.out.println(thisNumber + " + " + targetNumber + " = " + targetSum );
+					
 					found = 1;
 					break;
 				}

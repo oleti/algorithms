@@ -93,7 +93,7 @@ public class Papidimitriou2Sat {
 			}
 			
 			//if(j==innerLoopCount)
-				//System.out.println("Couldnt find it :( " + j);
+				
 		}
 		
 		return false;

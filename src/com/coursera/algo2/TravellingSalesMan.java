@@ -85,7 +85,7 @@ public class TravellingSalesMan {
 						
 						if ((currentPermutation & (1 << j)) != 0){ // means that the k'th bit is set
 							
-							//System.out.println("Trying to calculate for " + (currentPermutation+"_"+j) + " " + Long.toBinaryString(currentPermutation));
+							
 							
 							// we are interested in calculating "a" value for "currentPermutation_k"
 							float minimum = 999999999f; // sufficiently large
@@ -94,7 +94,7 @@ public class TravellingSalesMan {
 									// subset we are interested in
 									int subsetAfterSubtraction = currentPermutation - (currentPermutation & (1 << j));  // S-{j}
 									
-									//System.out.println("Looking for " + subsetAfterSubtraction+"_"+k);
+									
 									// b for the combination "subsetAfterSubtraction_(numOfVertices-p)" should have been already computed in the past
 									try{
 										float costOfSubset = 0;

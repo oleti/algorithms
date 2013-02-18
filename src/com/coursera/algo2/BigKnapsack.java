@@ -46,7 +46,7 @@ public class BigKnapsack {
 					newSubProblemWeights.add(currentWeight - weight[i]);
 			}
 			possibleSubProblemWeights.addAll(newSubProblemWeights);
-			//System.out.println("Number of possible subproblem weights for element " + i + " = " + numOfPossibleWeights[i]);
+			
 			
 		}
 		
@@ -97,7 +97,7 @@ public class BigKnapsack {
 					maxValue = bestValue;
 				}
 				
-				//System.out.println("a[" + i + "][" + j + "] " + lowerIndex +" \t= " + bestValue + " knapsackSize = " + currentKnapsackWeight + "  (" + (currentKnapsackWeight - weight[i]) + ")");
+				
 			}
 			
 		}

@@ -18,8 +18,7 @@ public class MergeSortUtility {
 	 * @return
 	 */
 	public long sort(int level){
-		
-		//System.out.println("Trying to process Level = " + level);
+
 		if((endIndex - startIndex) <1)
 			return 0;
 		
@@ -40,14 +39,7 @@ public class MergeSortUtility {
 		
 		// Merge Step
 		splitInversions += merge(level);
-		
-		/*
-		if(level == 1){
-			System.out.println("Level " + level + " has " + startIndex + " startIndex and " + firstArrayEndIndex + " midpoint and " + endIndex + " endIndex");
-			System.out.println("Level " + level + " has " + leftInversions + " LeftInversions and " + rightInversions + " RightInversions and " + splitInversions + " SplitInversions");
-			System.out.println("Total Inversions at Level " + level + " = " + (leftInversions + rightInversions + splitInversions));
-		}*/
-		
+			
 		return leftInversions + rightInversions + splitInversions;
 	}
 	

@@ -22,11 +22,11 @@ public class RandomizedContractionUtility {
 		
 		// Pick a node at random
 		int firstVertexIndex = rn.nextInt(nodes.size());
-		//System.out.println(firstVertexIndex);
+		
 		Node firstVertex = nodes.get(firstVertexIndex);
 		// Pick a second node from the list of first node's adjacent vertices
 		int secondVertexIndex = rn.nextInt(firstVertex.getAdjacentVertices().size());
-		//System.out.println(secondVertexIndex);
+		
 		Node secondVertex = firstVertex.getAdjacentVertices().get(secondVertexIndex);
 
 		// Merge the two nodes

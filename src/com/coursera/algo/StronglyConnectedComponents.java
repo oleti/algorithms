@@ -28,14 +28,14 @@ public class StronglyConnectedComponents {
 		// This is run over the inverted graph 
 		// the order of vertices is from highest to lowest
 		
-		// System.out.println("Calling DFS Loop over inverted graph.....");
+		
 		
 		List<Integer> order = new ArrayList<Integer>();
 		for(int i=adjacentVertices.length-1;i>=0; i--)
 			order.add(i);
 		DFSLoop(order, incomingVertices, adjacentVertices); // inverted graph
 		
-		// System.out.println("DFS Loop over inverted graph complete.");
+		
 		
 		// Compute new order based on finishing times
 		HashMap<Integer, Integer> map = new HashMap<Integer, Integer>();
@@ -49,16 +49,16 @@ public class StronglyConnectedComponents {
 				//System.out.print(map.get(i) + " ");
 		}
 		
-		//System.out.println();
+		
 		
 		// Call DFS Loop again to compute SCCs
 		components = new ArrayList();
 		explored = new boolean[adjacentVertices.length];
 		DFSLoop(order, adjacentVertices, incomingVertices);
 		
-		// System.out.println("Final DFS Loop Complete...");
 		
-		// System.out.println("Total number of strongly connected components found = " + components.size());
+		
+		
 		
 		return components;
 	}

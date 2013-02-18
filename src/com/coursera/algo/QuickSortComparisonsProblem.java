@@ -28,12 +28,12 @@ public class QuickSortComparisonsProblem {
 		}
 		in.close();
 		
-		//System.out.println("Total Integers read = " + unSortedArray.length);
+		
 		
 		int[] array = new int [10000];
 		System.arraycopy(unSortedArray, 0, array, 0, unSortedArray.length);
 		long startTime = System.currentTimeMillis();
-		//System.out.println("Performing QuickSort - FirstElement Pivot: " );
+		
 		
 		QuickSortUtility quickSortUtility = new QuickSortUtility(array, 0, array.length - 1 , QuickSortUtility.FIRST_ELEMENT_PIVOT);
 		System.out.println("Total number of comparisons in FIRST_ELEMENT_PIVOT = " + quickSortUtility.sort());
@@ -47,7 +47,7 @@ public class QuickSortComparisonsProblem {
 		System.out.println("Total number of comparisons in MEDIAN_ELEMENT_PIVOT = " + quickSortUtility.sort());
 		
 		long endTime = System.currentTimeMillis();
-		//System.out.println("Completed QuickSort - FirstElement Pivot: " );
+		
 		System.out.println("Total time taken : " + (endTime-startTime) + " milliseconds");
 		
 	}
